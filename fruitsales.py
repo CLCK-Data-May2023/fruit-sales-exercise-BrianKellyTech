@@ -1,16 +1,10 @@
 import pandas as pd
 
-# Create a dictionary
-data = {
-    'Apples': [35, 41],
-    'Bananas': [21, 34]
-}
+# Create the DataFrame
+df = pd.DataFrame([[35, 21], [41, 34]], columns=['Apples', 'Bananas'],
+                           index=['2017 Sales', '2018 Sales'])
 
-# Create a DataFrame
-df = pd.DataFrame(data, index=['2017 Sales', '2018 Sales'])
-
-# Save the DataFrame to a CSV file named 'fruit'
+# Save the DataFrame to a CSV file
 df.to_csv('fruit.csv')
 
-# Print a message to let me know the file was saved
 print("DataFrame saved to 'fruit.csv'")
