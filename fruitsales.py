@@ -7,4 +7,4 @@ df = pd.DataFrame([[35, 21], [41, 34]], columns=['Apples', 'Bananas'],
 # Save the DataFrame to a CSV file
 df.to_csv('fruit.csv')
 
-print("DataFrame saved to 'fruit.csv'")
+# print("DataFrame saved to 'fruit.csv'")
